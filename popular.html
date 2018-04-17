@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta charset="utf-8" /> 
+	<title>Популярне сьогодні</title> 
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<script src="script.js"></script>
+</head> 
+<body> 
+	<header>
+	<div class="container">
+		<span> 
+		<img class="header__logo" src="img/logo.jpg" alt="Logo">
+		<nav>
+			<ul class="header__nav">
+				<li>
+				<div class="dropdown">
+					<button class="dropbtn" onfocus="dropdownFunc()">Все про DJ</button>
+					<div class="dropdown-content" id="myDropdown">
+      					<a href="index.html">Історія DJ</a>
+      					<a href="ways.html">Напрямки ЕМ</a>
+      					<a href="top.html">ТОП 20 DJ's</a>
+    				</div>
+				</div></li>
+				<li class="active"><a href="popular.html">Популярне</a></li>
+				<li><a href="music.html">Музика</a></li>
+			</ul>
+		</nav>
+		<button class="button_search">Go!</button> 
+		<form>
+			<input type="text" placeholder="Search"></input>
+		</form>
+		</span>
+		</div>
+	</header> 
+	<article> 
+		<section> 
+		<h2>Популярне сьогодні:</h2>
+		<iframe width="660" height="365" src="https://www.youtube.com/embed/xGPjonxrUYc" frameborder="0" allowfullscreen></iframe>
+		</section>
+	</article>
+	<footer> 
+	<br>	
+	<span id="doc_time">
+ 	Дата і час
+	</span>
+	<script type="text/javascript">
+ 	clock();
+	</script>
+	<p>Copyright © 2018, Kyrsova robota </p> 
+	<br>
+	</footer> 
+</body>
+</html>

@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta charset="utf-8" /> 
+	<title>Музика</title> 
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<script src="script.js"></script>
+</head> 
+<body> 
+	<header>
+	<div class="container">
+		<span> 
+		<img class="header__logo" src="img/logo.jpg" alt="Logo">
+		<nav>
+			<ul class="header__nav">
+				<li>
+				<div class="dropdown">
+					<button class="dropbtn" onfocus="dropdownFunc()">Все про DJ</button>
+					<div class="dropdown-content" id="myDropdown">
+      					<a href="index.html">Історія DJ</a>
+      					<a href="ways.html">Напрямки ЕМ</a>
+      					<a href="top.html">ТОП 20 DJ's</a>
+    				</div>
+				</div></li>
+				<li><a href="popular.html">Популярне</a></li>
+				<li class="active"><a href="music.html">Музика</a></li>
+			</ul>
+		</nav>
+		<button class="button_search">Go!</button> 
+		<form>
+			<input type="text" placeholder="Search"></input>
+		</form>
+		</span>
+		</div>
+	</header> 
+	<article> 
+		<section> 
+		<h2>Slideshow & Music</h2>
+
+			<div class="slideshow-container">
+
+			<div class="mySlides">
+  				<img class="img_body_s" src="img/main1.jpg" >
+			</div>
+
+			<div class="mySlides">
+  				<img class="img_body_s" src="img/main2.jpg">
+			</div>
+
+			<div class="mySlides">
+  				<img class="img_body_s" src="img/ways1.jpg">
+			</div>
+
+			</div>
+			<br>
+		</section>
+		<section>
+			<h2>Music list</h2>
+			<h3>Kozak System vs. Grishin - Така спокуслива (Mojo & Kalashnikov Mash)</h3>
+			<audio controls>
+  				<source src="music/Kozak System vs. Grishin - Така спокуслива (Mojo & Kalashnikov Mash).mp3" type="audio/mpeg">
+			</audio>
+			<h3>Пацики з Франека vs. Alexx Slam - Vasya OMG (Long) (Mojo & Kalashnikov Mash)</h3>
+			<audio controls>
+  				<source src="music/Пацики з Франека vs. Alexx Slam - Vasya OMG (Long) (Mojo & Kalashnikov Mash).mp3" type="audio/mpeg">
+			</audio>
+			<h3>Віктор Павлік vs. KD Division & Project 5.19 - Нема з ким (Mojo & Kalashnikov Mash)</h3>
+			<audio controls>
+  				<source src="music/Віктор Павлік vs. KD Division & Project 5.19 - Нема з ким (Mojo & Kalashnikov Mash).mp3" type="audio/mpeg">
+			</audio>
+                        <h3>Океан Ельзи vs. Danny Avila - Я так хочу (Mojo & Kalashnikov Mash)</h3>
+			<audio controls>
+  				<source src="music/Океан Ельзи vs. Danny Avila - Я так хочу (Mojo & Kalashnikov Mash).mp3" type="audio/mpeg">
+			</audio>
+                        <h3>Фліт – Їжачок (Mojo & DMITRY SEER Mashup)</h3>
+			<audio controls>
+  				<source src="music/Фліт – Їжачок (Mojo & DMITRY SEER Mashup).mp3" type="audio/mpeg">
+                        </audio>
+		</section>
+	</article>
+	<footer> 
+	<br>	
+	<span id="doc_time">
+ 	Дата і час
+	</span>
+	<script type="text/javascript">
+ 	clock();
+	</script>
+	<p>Copyright © 2018, Kyrsova robota </p> 
+	<br>
+	</footer> 
+</body>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 3000);
+}
+</script>
+</html>
